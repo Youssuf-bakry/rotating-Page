@@ -8,13 +8,11 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   overflow-x: hidden;
-  margin: 0;
-  /* height: 100vh;
-  width: 100vw; */
-  /* overflow: hidden; */
+  background-color: grey;
 }
 .container {
-  height: 100vh;
+  /* height: 100vh; bad*/
+  background-color: white;
   padding: 4rem;
   /* overflow: hidden; */
   width: 100vw;
@@ -46,6 +44,10 @@ body {
   background-color: red;
 }
 
+.container.rotate + nav li {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
 /* .container.rotate .circle {
   transform: rotate(-45deg);
 } same result (☞ﾟヮﾟ)☞*/
@@ -75,13 +77,51 @@ body {
 
 .content {
   margin: 3rem auto;
-  max-width: 100rem;
+  max-width: 80rem;
 }
 
 nav {
   display: block;
-  /* position: fixed;
+  position: fixed;
   bottom: 40px;
   left: 0;
-  z-index: 100; */
+  z-index: 100;
+}
+
+nav ul {
+  color: white;
+  list-style: none;
+}
+nav a {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+nav li i {
+  font-size: 1.25rem;
+
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
 }
