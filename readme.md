@@ -1,8 +1,10 @@
-# Expanding Cards
+# Rotating Page
 
-![ScreenShot](https://th.bing.com/th/id/OIP.sQNe1E--1usgyH7bY-ftMgHaFQ?pid=ImgDet&rs=1)
+![ScreenShot](https://th.bing.com/th/id/OIP.4ho39iETlFAD8hHuQ4G5AwHaEs?pid=ImgDet&rs=1)
 
-### Quick Practicing on Basic skills.
+### Quick Practicing on Crucial Css skills.
+
+I learned a lot from this project especially in some css tricks .
 
 ---
 
