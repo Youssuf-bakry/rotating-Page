@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  margin: 0;
+  /* height: 100vh;
+  width: 100vw; */
+  /* overflow: hidden; */
+}
+.container {
+  height: 100vh;
+  padding: 4rem;
+  /* overflow: hidden; */
+  width: 100vw;
+  min-height: 100vh;
+  /* margin: 0 auto; */
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+.container.rotate {
+  transform: rotate(-20deg);
+}
+.container img {
+  max-width: 100%;
+}
+
+.circle-container {
+  position: fixed;
+  left: -7.5rem;
+  top: -7.5rem;
+}
+
+.circle {
+  /* rotate: -90deg; not supported in unupdated browsers */
+  transition: transform 0.5s linear;
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* .container.rotate .circle {
+  transform: rotate(-45deg);
+} same result (☞ﾟヮﾟ)☞*/
+.circle.rotate {
+  transform: rotate(-45deg);
+}
+.circle button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  height: 7.5rem;
+}
+
+.circle #close {
+  position: absolute;
+  left: 35%;
+  bottom: 1%;
+}
+.circle #open {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+}
+
+.content {
+  margin: 3rem auto;
+  max-width: 100rem;
+}
+
+nav {
+  display: block;
+  /* position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100; */
+}
